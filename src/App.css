@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 40px 24px;
+  border-top: 30px solid #f4cf47;
+}
+h1 {
+  color: #f4cf47;
+  font-family: "Fredoka One", cursive;
 }
 
-.App-link {
-  color: #61dafb;
+.app__searchForm {
+  margin-top: 17px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__input {
+  padding: 6px 16px;
+  min-width: 200px;
+  max-width: 100vw;
+  font-size: 17px;
+  border-radius: 15px;
+}
+
+.app__submit {
+  margin-left: 6px;
+  width: 90px;
+  height: 30px;
+  border: solid 2px #000;
+  border-radius: 15px;
+  background: #f4cf47;
+  font-family: "Fredoka One", cursive;
+  cursor: pointer;
+}
+
+.app__submit:hover {
+  filter: brightness(110%);
+}
+
+.app__healthLabels {
+  padding: 5px 8px;
+  margin-left: 6px;
+  border-radius: 15px;
+  border: solid 2px #000;
+  font-size: 14px;
+}
+
+.app__recipes {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 220px 220px;
+  align-items: baseline;
 }
