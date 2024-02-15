@@ -3,7 +3,7 @@ import "./style.css";
 
 function Recipetile({ recipe }) {
   return (
-    recipe["recipe"]["image"].match(/\.(jpeg|jpg|gif|png)$/) != null && (
+    //recipe["recipe"]["image"].match(/\.(jpeg|jpg|gif|png)$/) != null && (
       <div className="recipeTile">
         <img
           className="recipeTile__image"
@@ -13,8 +13,8 @@ function Recipetile({ recipe }) {
         />
         <p className="recipeTile__name">{recipe["recipe"]["label"]}</p>
       </div>
-    )
-  );
+    );
+  //);
 }
 
 export default Recipetile;
